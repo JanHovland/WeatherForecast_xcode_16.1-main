@@ -55,60 +55,55 @@ func FindMoonPhaseImage(moonPhase: String,
             daysToFullMoon = 10
             distance = 369030
         } else if moonIllumination >= 32,
-                  moonIllumination <= 42 {
+                  moonIllumination < 41 {
             image = "Waxing Crescent 6"
             daysToFullMoon = 9
             distance = 373386
         }
     } else if moonPhase == String(localized: "First Quarter") { /// Første kvarter
-        if moonIllumination >= 43,
-           moonIllumination <= 53 {
+        if moonIllumination >= 41,
+           moonIllumination <= 50 {
             image = "First Quarter"
             daysToFullMoon = 8
             distance = 379300
         }
     } else if moonPhase == String(localized: "Waxing Gibbous") { /// Voksende måne
-        if moonIllumination >= 54 ,
-           moonIllumination <= 63 {
+        if moonIllumination > 51 ,
+           moonIllumination < 62 {
             image = "Waxing Gibbous 1"
-            daysToFullMoon = 7
-            distance = 385473
-        } else if moonIllumination >= 64,
-                  moonIllumination <= 73 {
-            image = "Waxing Gibbous 2"
             daysToFullMoon = 6
-            distance = 389915
-        } else if moonIllumination >= 74,
-                  moonIllumination <= 81 {
-            image = "Waxing Gibbous 3"
+            distance = 379900
+        } else if moonIllumination > 62,
+                  moonIllumination <= 72 {
+            image = "Waxing Gibbous 2"
             daysToFullMoon = 5
-            distance = 394202
-        } else if moonIllumination >= 82,
-                  moonIllumination <= 88 {
-            image = "Waxing Gibbous 4"
+            distance = 374088
+        } else if moonIllumination > 72,
+                  moonIllumination <= 82 {
+            image = "Waxing Gibbous 3"
             daysToFullMoon = 4
-            distance = 397830
-        } else if moonIllumination >= 89,
-                  moonIllumination <= 94 {
-            image = "Waxing Gibbous 5"
+            distance = 368472
+        } else if moonIllumination > 82,
+                  moonIllumination < 90 {
+            image = "Waxing Gibbous 4"
             daysToFullMoon = 3
-            distance = 400784
-        } else if moonIllumination >= 95,
-                  moonIllumination <= 97 {
-            image = "Waxing Gibbous 6"
+            distance = 363585
+        } else if moonIllumination >= 90,
+                  moonIllumination <= 95 {
+            image = "Waxing Gibbous 5"
             daysToFullMoon = 2
-            distance = 403244
-        } else if moonIllumination >= 98,
+            distance = 360138
+        } else if moonIllumination > 95,
                   moonIllumination <= 99 {
             image = "Waxing Gibbous 6"
             daysToFullMoon = 1
-            distance = 404744
+            distance = 357790
         }
     } else if moonPhase == String(localized: "Full Moon") { /// Fullmåne
         if moonIllumination == 100 {
             image = "Full moon"
             daysToFullMoon = 30
-            distance = 404044
+            distance = 357561
         }
     } else if moonPhase == String(localized: "Waning Gibbous") { /// Minkende måne
         if moonIllumination <= 100 ,
